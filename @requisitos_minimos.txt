@@ -1,0 +1,5 @@
+
+
+1 - Nodejs
+2 - IDE (preferencial: VScode)
+3 - Gerenciador de execução de código (VScode -> plugin -> runner)
