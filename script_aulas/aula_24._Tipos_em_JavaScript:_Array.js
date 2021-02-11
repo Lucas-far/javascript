@@ -3,14 +3,27 @@
 // Módulo: aula_24._Tipos_em_JavaScript:_Array.js
 // Aparição: 24. Tipos em JavaScript: Array
 
-const notas_alunos = [9.1, 7.4, 8.2, 7] // 0, 1, 2, 3... (contagem de índice do 0)
+const l = [1, 2, 3] // 0, 1, 2... (contagem de índice do 0)
 
-console.log(notas_alunos[0])
-console.log(notas_alunos[4]) // undefined
+console.log(l[0])
+console.log(l[4])   // índice inexistente gera = undefined
 
-notas_alunos[3] = 5          // alteração de um dado
-console.log(notas_alunos)
-notas_alunos[4] = 0          // adição de índice (previamente = undefined)
-console.log(notas_alunos)
-notas_alunos[10] = 5.5       // índice inexistente com + de 1 índice de diferença, gera <empty items>
-console.log(notas_alunos)
+
+// -------------------------------- SINTAXES IGUAIS, FUNÇÕES DIFERENTES --------------------------------
+// alteração de um índice
+l[0] = 0               
+console.log(l)
+
+// adição de um índice 
+l[3] = 4               
+console.log(l)
+
+// adição de um índice (quando o índice especificado têm + de 1 de distância do último índice)
+// l[3] para l[5] é + de 1, então gera-se <empty items>
+l[5] = 6                
+console.log(l)
+
+// ------------------------------------------------ OBS ------------------------------------------------
+// ver [ recursos / length.js ]
+// ver [ recursos / push.js ]
+// ver [ recursos / pop.js ]
